@@ -32,7 +32,7 @@ const Nav = styled.div`
   background: #15171c;
   height: 80px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content:center;
   align-items: center;
 `;
  
@@ -90,11 +90,11 @@ const Navbar = () => {
     <>
       <IconContext.Provider value={{ color: "#fff" }}>
         <Nav>
-        <div className="pt-2">
+        <div className="pt-2 pr-[100px]">
          <a href="/"><img  src={logo} className='h-10 w-50'/></a>
        </div>
-      
-       <div className="hidden space-x-6 md:flex font-bold text-[18px] ">
+        
+       <div className="hidden space-x-6 md:flex font-bold text-[16px] ">
           <a href="/" className="hover:text-darkGrayishBlue text-white pt-1">Home</a>
           <ul className="pt-1">
             <a href="#" className="hover:text-darkGrayishBlue items-center text-white" onClick={showbar}>Menus</a>
@@ -116,9 +116,19 @@ const Navbar = () => {
         </div> 
         <a href="#" className="relative hover:text-darkGrayishBlue text-white right-6 pt-1">News</a>
         <a href="#" className="relative hover:text-darkGrayishBlue text-white right-6 pt-1">Community</a>
-        <button className=" pt-1  px-6  pb-1 text-white bg-brightRed1 round-full baseline hover:text-brightRed">Sign In</button>
+       
         </div>
-        
+        <div  className="hidden md:flex border border-purple-200 rounded mr-[80px]">
+                <input
+                    type="text"
+                    className="block w-full px-4 py-2 text-purple-700 bg-white border rounded-md focus:border-purple-400 focus:ring-purple-300 focus:outline-none focus:ring focus:ring-opacity-40"
+                    placeholder="Search..."
+                />
+                <button className="px-4 text-white bg-purple-600 border-l rounded ">
+                    Search
+                </button>
+        </div>
+        <button className=" md:flex hidden pt-1  px-6  pb-1 text-white bg-brightRed1 round-full baseline hover:text-brightRed">Sign In</button>
           <NavIcon to="#" className="md:hidden focus:outline-none pl-16 ">
             <FaIcons.FaBars onClick={showSidebar} />
           </NavIcon>
