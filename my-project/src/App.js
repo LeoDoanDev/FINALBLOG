@@ -1,4 +1,3 @@
-import "./App.css";
 import Navbar from "./Components/Navbar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { AboutUs, OurAim, OurVision } from "./pages/AboutUs";
@@ -11,10 +10,11 @@ import {
 import { Events, EventsOne, EventsTwo } from "./pages/Events";
 import Contact from "./pages/ContactUs";
 import Support from "./pages/Support";
+import Home from "./Components/Index"
 function App() {
   return (
     <Router>
-      <Navbar />
+      <Home />
       <Routes>
         <Route path='/about-us' element={<AboutUs/>} />
         <Route path='/about-us/aim' element={<OurAim/>} />
