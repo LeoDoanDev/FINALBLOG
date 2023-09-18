@@ -1,0 +1,23 @@
+.menu {
+ position: absolute;
+ background: #2f3138;
+ list-style-type: none;
+ margin: 28px -10px;
+ border: 1px solid grey;
+ width: 100px;
+ 
+ flex-direction: column;
+ text-align: center;
+}
+
+.menu > a {
+ margin: 0;
+ color:white;
+
+ 
+}
+
+.menu > a:hover {
+ background-color: rgb(108, 155, 199);
+}
+
