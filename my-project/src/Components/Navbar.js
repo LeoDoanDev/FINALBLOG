@@ -9,6 +9,7 @@ import { Sidebar } from "./Sidebar";
 import Subbar from "./Subbar";
 import { IconContext } from "react-icons/lib";
 import logo from "../Assets/Logo/logo.png"
+import fun from  "../Assets/Logo/fun1.png"
 import '../CSS/Navbar.css'
 
 const SidebarLink = styled(Link)`
@@ -65,11 +66,11 @@ const Menus = styled.div`
   position: absolute;
   background: #2f3138;
   list-style-type: none;
-  margin: 28px -10px;
+  margin: 25px -10px;
+ 
   width: 100px;
   flex-direction: column;
   text-align: center;
-  
   a{
   margin:0;
   color:white;
@@ -90,48 +91,49 @@ const Navbar = () => {
     <>
       <IconContext.Provider value={{ color: "#fff" }}>
         <Nav>
-        <div className="pt-2 pr-[100px]">
-         <a href="/"><img  src={logo} className='h-10 w-50'/></a>
-       </div>
-        
-       <div className="hidden space-x-6 md:flex font-bold text-[16px] ">
-          <a href="/" className="hover:text-darkGrayishBlue text-white pt-1">Home</a>
-          <ul className="pt-1">
-            <a href="#" className="hover:text-darkGrayishBlue items-center text-white" onClick={showbar}>Menus</a>
-                <Menus>    
-                  {open ? (
-                    <ul className="menu ">
-                      <a href="/about-us/aim" className="menu-item">
-                          <a >Menu 1</a>
-                      </a><br/>
-                      <a href="/about-us/vision" className="menu-item">
-                          <a>Menu 2</a>
-                      </a><br/>
-                    </ul>
-                  ) : null}
-                </Menus>
-            </ul>
-        <div className=" relative flex flex-row right-6 top-1 pt-1">
-            {open?<RiIcons.RiArrowDownSFill />:<RiIcons.RiArrowUpSFill />}
-        </div> 
-        <a href="#" className="relative hover:text-darkGrayishBlue text-white right-6 pt-1">News</a>
-        <a href="#" className="relative hover:text-darkGrayishBlue text-white right-6 pt-1">Community</a>
-       
-        </div>
-        <div  className="hidden md:flex border border-purple-200 rounded mr-[80px]">
-                <input
-                    type="text"
-                    className="block w-full px-4 py-2 text-purple-700 bg-white border rounded-md focus:border-purple-400 focus:ring-purple-300 focus:outline-none focus:ring focus:ring-opacity-40"
-                    placeholder="Search..."
-                />
-                <button className="px-4 text-white bg-purple-600 border-l rounded ">
-                    Search
-                </button>
-        </div>
-        <button className=" md:flex hidden pt-1  px-6  pb-1 text-white bg-brightRed1 round-full baseline hover:text-brightRed">Sign In</button>
-          <NavIcon to="#" className="md:hidden focus:outline-none pl-16 ">
-            <FaIcons.FaBars onClick={showSidebar} />
-          </NavIcon>
+          <div className="relative pt-2  opacity-[.75] ">
+            <a href="/"><img  src={fun} className='h-10 w-50 rounded-full'/></a>
+          </div>
+          <div className="pt-2 pr-[80px] opacity-[.63]">
+            <a href="/"><img  src={logo} className='h-10 w-50'/></a>
+          </div>
+          <div className="hidden space-x-6 md:flex font-bold text-[16px] ">
+            <a href="/" className="hover:text-darkGrayishBlue text-white pt-1">Home</a>
+            <ul className="pt-1">
+              <a href="#" className="hover:text-darkGrayishBlue items-center text-white" onClick={showbar}>Menus</a>
+                  <Menus>    
+                    {open ? (
+                      <ul className="menu ">
+                        <a href="/about-us/aim" className="menu-item">
+                            <a >Menu 1</a>
+                        </a><br/>
+                        <a href="/about-us/vision" className="menu-item">
+                            <a>Menu 2</a>
+                        </a><br/>
+                      </ul>
+                    ) : null}
+                  </Menus>
+              </ul>
+            <div className=" relative flex flex-row right-6 top-1 pt-1">
+                {open?<RiIcons.RiArrowDownSFill />:<RiIcons.RiArrowUpSFill />}
+            </div> 
+            <a href="#" className="relative hover:text-darkGrayishBlue text-white right-6 pt-1">News</a>
+            <a href="#" className="relative hover:text-darkGrayishBlue text-white right-6 pt-1">Community</a>
+          </div>
+          <div  className="hidden md:flex border border-purple-200 rounded mr-[50px]">
+                  <input
+                      type="text"
+                      className="block w-full px-4 py-2 text-purple-700 bg-white border rounded-md focus:border-purple-400 focus:ring-purple-300 focus:outline-none focus:ring focus:ring-opacity-40"
+                      placeholder="Search..."
+                  />
+                  <a href="" className=" px-4 pt-2 text-white bg-purple-600 border-l rounded"> <button className=" ">
+                      <RiIcons.RiSearchLine/>
+                  </button> </a>
+          </div>
+            <a href=""><button className=" md:flex hidden pt-2 pb-2 px-4 py-2 rounded pb-1 text-white bg-brightRed1 round-full baseline hover:text-brightRed">Sign In</button></a>
+            <NavIcon to="#" className="md:hidden focus:outline-none pl-16 ">
+              <FaIcons.FaBars onClick={showSidebar} />
+            </NavIcon>
         </Nav>
 
         <SidebarNav sidebar={sidebar}>
