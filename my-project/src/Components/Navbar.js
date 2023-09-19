@@ -42,6 +42,7 @@ const NavIcon = styled(Link)`
   font-size: 2rem;
   height: 80px;
   padding-top:20px;
+  margin-left:57px;
   justify-content: flex-end;
   align-items: center;
 `;
@@ -66,7 +67,7 @@ const Menus = styled.div`
   position: absolute;
   background: #2f3138;
   list-style-type: none;
-  margin: 25px -10px;
+  margin: 25px -18px;
  
   width: 100px;
   flex-direction: column;
@@ -94,7 +95,7 @@ const Navbar = () => {
           <div className="relative pt-2  opacity-[.75] ">
             <a href="/"><img  src={fun} className='h-10 w-50 rounded-full'/></a>
           </div>
-          <div className="pt-2 pr-[80px] opacity-[.63]">
+          <div className="pt-2 pr-[80px] opacity-[.60]">
             <a href="/"><img  src={logo} className='h-10 w-50'/></a>
           </div>
           <div className="hidden space-x-6 md:flex font-bold text-[16px] ">
@@ -103,7 +104,7 @@ const Navbar = () => {
               <a href="#" className="hover:text-darkGrayishBlue items-center text-white" onClick={showbar}>Menus</a>
                   <Menus>    
                     {open ? (
-                      <ul className="menu ">
+                      <ul className="pb-3">
                         <a href="/about-us/aim" className="menu-item">
                             <a >Menu 1</a>
                         </a><br/>
@@ -130,7 +131,7 @@ const Navbar = () => {
                       <RiIcons.RiSearchLine/>
                   </button> </a>
           </div>
-            <a href=""><button className=" md:flex hidden pt-2 pb-2 px-4 py-2 rounded pb-1 text-white bg-brightRed1 round-full baseline hover:text-brightRed">Sign In</button></a>
+            <a href="" className=" relative bg-purple-600 rounded md:flex hidden pt-2 pb-2 px-4 py-2 rounded pb-1 text-white  round-full baseline hover:text-brightRed"><button >Sign In</button></a>
             <NavIcon to="#" className="md:hidden focus:outline-none pl-16 ">
               <FaIcons.FaBars onClick={showSidebar} />
             </NavIcon>
