@@ -104,7 +104,7 @@ const Navbar = () => {
               <a href="#" className="hover:text-darkGrayishBlue items-center text-white" onClick={showbar}>Menus</a>
                   <Menus>    
                     {open ? (
-                      <ul className="pb-3">
+                      <ul className="relative pb-3">
                         <a href="/about-us/aim" className="menu-item">
                             <a >Menu 1</a>
                         </a><br/>

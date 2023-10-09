@@ -10,13 +10,13 @@ import {
 import { Events, EventsOne, EventsTwo } from "./pages/Events";
 import Contact from "./pages/ContactUs";
 import Support from "./pages/Support";
-import Home from "./Components/Index"
+import Uibody from "./Components/Uibody";
 function App() {
   return (
     <Router>
-      <Home />
+      <Navbar />
       <Routes>
-        <Route path='/about-us' element={<AboutUs/>} />
+        <Route path='/about-us' element={<Uibody/>} />
         <Route path='/about-us/aim' element={<OurAim/>} />
         <Route path='/about-us/vision' element={<OurVision/>} />
         <Route path='/services' element={<Services/>} />
