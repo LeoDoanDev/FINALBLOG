@@ -1,13 +1,7 @@
 
 import React from "react";
  
-export const AboutUs = () => {
-  return (
-    <div className="home">
-      <h1>GeeksforGeeks About us</h1>
-    </div>
-  );
-};
+
  
 export const OurAim = () => {
   return (
