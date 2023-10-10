@@ -54,7 +54,7 @@ const SidebarNav = styled.nav`
   display: flex;
   justify-content: center;
   position: fixed;
-  top: 20px;
+  top: 0px;
   right: ${({ sidebar }) => (sidebar ? "0%" : "-100%")};
   transition: 300ms;
   z-index: 100;
@@ -69,8 +69,7 @@ const Menus = styled.div`
   list-style-type: none;
   margin: 25px -18px;
  
-  width: 100px;
-  flex-direction: column;
+  flex-direction: row;
   text-align: center;
   a{
   margin:0;
@@ -104,7 +103,7 @@ const Navbar = () => {
               <a href="#" className="hover:text-darkGrayishBlue items-center text-white" onClick={showbar}>Menus</a>
                   <Menus>    
                     {open ? (
-                      <ul className="pb-3">
+                      <ul className="relative flex flex-row pr-1 pl-1 space-x-2 pb-3">
                         <a href="/about-us/aim" className="menu-item">
                             <a >Menu 1</a>
                         </a><br/>
@@ -118,8 +117,8 @@ const Navbar = () => {
             <div className=" relative flex flex-row right-6 top-1 pt-1">
                 {open?<RiIcons.RiArrowDownSFill />:<RiIcons.RiArrowUpSFill />}
             </div> 
-            <a href="#" className="relative hover:text-darkGrayishBlue text-white right-6 pt-1">News</a>
-            <a href="#" className="relative hover:text-darkGrayishBlue text-white right-6 pt-1">Community</a>
+            <a href="/news" className="relative hover:text-darkGrayishBlue text-white right-6 pt-1">News</a>
+
           </div>
           <div  className="hidden md:flex border border-purple-200 rounded mr-[50px]">
                   <input
@@ -131,7 +130,7 @@ const Navbar = () => {
                       <RiIcons.RiSearchLine/>
                   </button> </a>
           </div>
-            <a href="" className=" relative bg-purple-600 rounded md:flex hidden pt-2 pb-2 px-4 py-2 rounded pb-1 text-white  round-full baseline hover:text-brightRed"><button >Sign In</button></a>
+            <a href="/signin" className=" relative bg-purple-600 rounded md:flex hidden pt-2 pb-2 px-4 py-2 rounded pb-1 text-white  round-full baseline hover:text-brightRed"><button >Sign In</button></a>
             <NavIcon to="#" className="md:hidden focus:outline-none pl-16 ">
               <FaIcons.FaBars onClick={showSidebar} />
             </NavIcon>
