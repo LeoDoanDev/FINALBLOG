@@ -1,9 +1,20 @@
-import React from 'react'
 
-function Menus() {
+import React from "react";
+ 
+
+ 
+export const OurAim = () => {
   return (
-    <div>Menus</div>
-  )
-}
-
-export default Menus
+    <div className="home">
+      <h1>GeeksforGeeks Aim</h1>
+    </div>
+  );
+};
+ 
+export const OurVision = () => {
+  return (
+    <div className="home">
+      <h1>GeeksforGeeks Vision</h1>
+    </div>
+  );
+};
