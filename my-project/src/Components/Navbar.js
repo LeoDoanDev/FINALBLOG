@@ -67,7 +67,7 @@ const Menus = styled.div`
   position: absolute;
   background: #2f3138;
   list-style-type: none;
-  margin: 25px -18px;
+  margin: 33px -18px;
  
   flex-direction: row;
   text-align: center;
@@ -81,7 +81,6 @@ const Menus = styled.div`
   }
 `;
 
- 
 const Navbar = () => {
   const [sidebar, setSidebar] = useState(false);
   const [open, setbar] = useState(false);
@@ -103,7 +102,7 @@ const Navbar = () => {
               <a href="#" className="hover:text-darkGrayishBlue items-center text-white" onClick={showbar}>Menus</a>
                   <Menus>    
                     {open ? (
-                      <ul className="relative flex flex-row pr-1 pl-1 space-x-2 pb-3">
+                      <ul className="relative flex flex-row pr-1 pl-1 space-x-4 pb-3">
                         <a href="/about-us/aim" className="menu-item">
                             <a >Menu 1</a>
                         </a><br/>

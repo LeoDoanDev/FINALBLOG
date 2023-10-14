@@ -7,8 +7,8 @@ module.exports = {
     screens:{
       sm:'480px',
       md:'768px',
-      lg:'975px',
-      xl:'1440px',
+      lg:'1024px',
+      xl:'1280px',
     },
     extend: {
        colors:{
@@ -22,7 +22,8 @@ module.exports = {
         veryPaleRed: 'hsl(13, 100%, 96%)',
         veryLightGray: 'hsl(0, 0%, 98%)',
         verylightblue:'hsl(180, 79%, 72%)',
-       } 
+        verylightsilver:'hsl(0, 2%, 88%)',
+      } 
     },
   },
   plugins: [],

@@ -11,16 +11,18 @@ import {
 import { Events, EventsOne, EventsTwo } from "./pages/Events";
 import Contact from "./pages/ContactUs";
 import Support from "./pages/Support";
-import Uibody from "./Components/Uibody";
+import Body from "./Components/Body";
 import News from "./pages/News";
 import Signin from "./pages/Signin";
 import Signup from "./pages/Signup";
+
 function App() {
   return (
     <Router>
       <Navbar />
       <Routes>
-        <Route path='/' element={<Uibody/>} />
+        <Route path='/' element={<Body/>} />
+        
         <Route path='/menus/aim' element={<OurAim/>} />
         <Route path='/menus/vision' element={<OurVision/>} />
         <Route path='/contact' element={<Contact/>} />
