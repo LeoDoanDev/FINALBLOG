@@ -23,8 +23,15 @@ module.exports = {
         veryLightGray: 'hsl(0, 0%, 98%)',
         verylightblue:'hsl(180, 79%, 72%)',
         verylightsilver:'hsl(0, 2%, 88%)',
-      } 
+        backgroundback:'hsl(20, 2%, 30%)',
+        borderback: 'hsl(0, 1%, 10%)',
+      },
+      fontFamily:{
+        young:['Young'],
+        dancing:['Dancing'],
+      }
     },
+  
   },
   plugins: [],
 }

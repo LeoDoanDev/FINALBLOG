@@ -14,16 +14,53 @@ import sig from '../Assets/Logo/A Dream of Splendor (2021).png';
 function Body() {
   
   return (
-       <div className=" justify-center items-center flex  ">
-           <div className="mt-[200px] w-screen  border-black">
-             <div className=' relative bg-verylightblue  '>
-              <p className='pl-4 pt-1 text-[24px] font-bold text-red-500'>Asian Drama</p>
+       <div className=" bg-black">
+           <div className=" border-black">
+            {/* <div className="border-4 border-red-500" >
+              <img src={sig} className='w-full h-[400px]' alt=""  />
+            </div> */}
+
+            <div className="relative flex  justify-center ">
+              <p className="absolute text-orange-500 font-bold top-8 font-young text-justify lg:w-[350px]  lg:text-[28px] lg:pl-6 md:text-[14px]">
+                "I Believe You
+                <p className='flex lg:pl-[25px]'>Because It's Me </p>
+                <p className='flex lg:pl-[25px]' >I Can Believe You"</p>
+                <p className='flex lg:pl-[100px]'>- Nam Hong Joo</p>
+              </p>
              
+              <img src={sig} className='w-full h-[400px] opacity-[0.5]' alt="" />
+             
+            </div>
+
+            {/* <div className="flex border-1 border-borderback ">
+              <div className="w-1/2 relative bg-backgroundback flex items-center justify-center">
+                <p className="absolute ">Love you</p>
+                
+              </div>
+              <div className="w-1/2   relative">
+              <img src={sig} className='w-full lg:h-[400px] md:h[250px] opacity-[0.8]' alt="" />
+              </div>
+              
+            </div> */}
+
+
+
+
+
+
+
+
+
+
+
+
+             <div className='mt-[200px] relative bg-slate-600	'>
+              <p className='pl-4 pt-1 text-[24px] font-bold font-serif text-red-500'>Asian Drama</p>
               {/* Asian */}
               <Swiper
                 modules={[Navigation, Pagination, Scrollbar, A11y]}
                 spaceBetween={50}
-                slidesPerView={3}
+                slidesPerView={4}
                 navigation
                 pagination={{ clickable: true }}
                 scrollbar={{ draggable: true }}
@@ -78,14 +115,14 @@ function Body() {
               </div>
 
               {/* Anime */}
-              <div className='text-black mt-[200px] relative bg-verylightblue '> 
-              <p className=' pl-4 pt-1 text-[24px] font-bold text-red-500'>Anime Drama</p>
+              <div className='text-black mt-[200px] relative bg-slate-600 '> 
+              <p className=' pl-4 pt-1 text-[24px] font-bold font-serif text-red-500  '>Anime Drama</p>
              
               {/* Asian */}
               <Swiper
                 modules={[Navigation, Pagination, Scrollbar, A11y]}
                 spaceBetween={50}
-                slidesPerView={3}
+                slidesPerView={4}
                 navigation
                 pagination={{ clickable: true }}
                 scrollbar={{ draggable: true }}
