@@ -114,16 +114,17 @@ const Navbar = () => {
     <>
       <IconContext.Provider value={{ color: "#fff" }} >
         <Nav >
+
           <div className="relative pt-2  opacity-[0.] ">
             <a href="/"><img  src={fun} className=' w-[50px] rounded-full'/></a>
           </div>
           <div className="pt-2 pr-[80px] opacity-[0.]">
             <a href="/"><img  src={logo} className='h-[50px] '/></a>
           </div>
-          <div className="relative hidden space-x-6 md:flex font-bold text-[20px] top-[8px]" ref={menuRef}>
-            <a href="/" style={{ textDecoration: 'none' }} className="hover:text-darkGrayishBlue text-white pt-1 " >Home</a>
+          <div className="relative hidden space-x-6 md:flex font-bold text-[20px] top-[16px]" ref={menuRef}>
+            <a href="/" style={{ textDecoration: 'none' }} className="hover:text-darkGrayishBlue text-white pt-1 " ><p className="hover:text-brightRedSupLight"> Home</p> </a>
             <ul className="pt-1">
-              <a href="#" className="hover:text-darkGrayishBlue items-center text-white" onClick={showbar}>Menus</a>
+              <a href="#" className="hover:text-darkGrayishBlue items-center text-white " onClick={showbar}><p className="hover:text-brightRedSupLight">Menus</p></a>
                   <Menus >    
                     {open ? (
                       
@@ -154,7 +155,7 @@ const Navbar = () => {
               <div className=" relative flex flex-row right-6 top-1 pt-1">
                 {open?<RiIcons.RiArrowDownSFill />:<RiIcons.RiArrowUpSFill />}
             </div> 
-            <a href="/news" style={{ textDecoration: 'none' }}  className="relative hover:text-darkGrayishBlue text-white right-6 pt-1">News</a>
+            <a href="/news" style={{ textDecoration: 'none' }}  className="relative  text-white right-6 pt-1"> <p className="hover:text-brightRedSupLight">News</p></a>
 
           </div>
           <div  className="hidden md:flex border border-purple-200 rounded mr-[50px]">
@@ -167,7 +168,7 @@ const Navbar = () => {
                       <RiIcons.RiSearchLine/>
                   </button> </a>
           </div>
-            <a href="/signin" style={{ textDecoration: 'none' }} className=" relative bg-purple-600 rounded md:flex hidden pt-2 pb-2 px-4 py-2 rounded pb-1 text-white  round-full baseline hover:text-brightRed"><button >Sign In</button></a>
+            <a href="/signin" style={{ textDecoration: 'none' }} className=" relative bg-purple-600 rounded md:flex hidden pt-2 pb-2 px-4 py-2  text-white round-full baseline hover:bg-brightRed"><button className="  ">Sign In</button></a>
             <NavIcon to="#" className="md:hidden focus:outline-none pl-16 ">
               <FaIcons.FaBars onClick={showSidebar} />
             </NavIcon>

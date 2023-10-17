@@ -34,6 +34,8 @@ function Body() {
             </div> */}
 
             <div className="relative flex  md:justify-start top-[100px]">
+            <a href="/"style={{ textDecoration: 'none' }}><button className="absolute btn btn-primary d-block md:w-40 md:top-[400px] md:left-[50px] lg:w-40 sm:w-32 lg:top-[400px] lg:left-[150px] sm:top-[400px] sm:left-4">Asian Drama</button></a> 
+
               <p className="absolute brightness-120 opacity-[0.] text-orange-300 font-bold font-young text-justify lg:w-[300px]  lg:top-[120px] lg:text-[28px] lg:pl-[25px] md:text-[14px]">
                 "I Believe You
                 <p className=' md:pl-[25px]' >I Can Believe You</p>
@@ -41,7 +43,7 @@ function Body() {
                 <p className=' text-right  mt-[-10px]'>- Nam Hong Joo</p>
               </p>
              
-              <img src={Asianpic} className='w-full h-[450px] opacity-[0.55]' alt="" />
+              <img src={Asianpic} className='w-full h-[500px] opacity-[0.]' alt="" />
              
             </div>
 
@@ -118,17 +120,8 @@ function Body() {
             
             {/* Movie */}
             <div className="relative flex  justify-center mt-[200px]">
-              <p className="absolute brightness-150 opacity-[0.] text-green-300 font-bold top-8 font-young text-justify lg:top-[100px]  lg:text-[28px] lg:pr-[550px] md:text-[14px]">
-                "The coming of a person
-                <p className=' md:pl-[25px]'>is, in fact, a tremendous feat.</p>
-                <p className=' md:pl-[25px] mt-[-15px]'>Because he</p>
-                <p className=' md:pl-[25px] mt-[-15px]'>comes with his past and present </p>
-                <p className=' md:pl-[25px] mt-[-15px]'>and</p>
-                <p className=' md:pl-[25px] mt-[-15px]'>with his future."</p>
-                <p className=' text-right  mt-[-10px]'>- 정현종</p>
-              </p>
-             
-              <img src={Moviepic} className='w-full h-[450px] opacity-[0.55]' alt="" />
+            <a href="/"style={{ textDecoration: 'none' }}><button className="absolute btn btn-primary d-block md:w-40 md:top-[400px] md:left-[50px] lg:w-40 sm:w-32 lg:top-[400px] lg:left-[150px] sm:top-[400px] sm:left-4">Movie</button></a> 
+              <img src={Moviepic} className='w-full h-[500px] opacity-[0.]' alt="" />
              
             </div>
             
@@ -193,12 +186,15 @@ function Body() {
 
               {/* Anime */}
               <div className="relative flex  justify-center mt-[200px]">
-              
-              <img src={Animepic} className='w-full h-[600px] opacity-[0.]' alt="" />
+              <a href="/"style={{ textDecoration: 'none' }}>
+                <button 
+                className="absolute btn btn-primary d-block md:w-40 md:top-[400px] md:left-[50px] lg:w-40 sm:w-32 lg:top-[400px] lg:left-[150px] sm:top-[400px] sm:left-4">Anime</button></a> 
+
+              <img src={Animepic} className='w-full h-[500px] opacity-[0.]' alt="" />
              
             </div>
               <div className='text-black mt-[200px] relative bg-slate-600 '> 
-              <p className=' pl-4 pt-1 text-[24px] font-bold font-serif text-red-500  '>Anime Drama</p>
+              <p className=' pl-4 pt-1 text-[24px] font-bold  text-red-500  '>Anime </p>
               <Swiper
                 modules={[Navigation, Pagination, Scrollbar, A11y]}
                 spaceBetween={50}
@@ -257,8 +253,8 @@ function Body() {
 
             {/* News   */}
             <div className="relative flex  mt-[200px]">
-             <a href="/"style={{ textDecoration: 'none' }}><button className="absolute btn btn-primary d-block md:w-40 md:top-[350px] md:left-[50px] lg:w-40 sm:w-32 lg:top-[350px] lg:left-[150px] sm:top-[350px] sm:left-4">News</button></a> 
-             <img src={Newspic} className='w-full h-[450px] opacity-[0.]' alt="" />
+             <a href="/"style={{ textDecoration: 'none' }}><button className="absolute btn btn-primary d-block md:w-40 md:top-[400px] md:left-[50px] lg:w-40 sm:w-32 lg:top-[400px] lg:left-[150px] sm:top-[400px] sm:left-4">News</button></a> 
+             <img src={Newspic} className='w-full h-[500px] opacity-[0.]' alt="" />
             </div>
             
             
