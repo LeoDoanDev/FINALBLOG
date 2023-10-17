@@ -30,7 +30,7 @@ font-size: 18px;
 }
 `;
 const Nav = styled.div`
-  background: #15171c;
+  background: #0b0f1a;
   height: 80px;
   display: flex;
   justify-content:center;
@@ -90,19 +90,19 @@ const Navbar = () => {
     <>
       <IconContext.Provider value={{ color: "#fff" }}>
         <Nav>
-          <div className="relative pt-2  opacity-[.75] ">
-            <a href="/"><img  src={fun} className='h-10 w-50 rounded-full'/></a>
+          <div className="relative pt-2  opacity-[0.] ">
+            <a href="/"><img  src={fun} className=' w-[50px] rounded-full'/></a>
           </div>
-          <div className="pt-2 pr-[80px] opacity-[.60]">
-            <a href="/"><img  src={logo} className='h-10 w-50'/></a>
+          <div className="pt-2 pr-[80px] opacity-[0.]">
+            <a href="/"><img  src={logo} className='h-[50px] '/></a>
           </div>
-          <div className="hidden space-x-6 md:flex font-bold text-[16px] ">
-            <a href="/" className="hover:text-darkGrayishBlue text-white pt-1">Home</a>
+          <div className="hidden space-x-6 md:flex font-bold text-[20px] ">
+            <a href="/" className="hover:text-darkGrayishBlue text-white pt-1 ">Home</a>
             <ul className="pt-1">
               <a href="#" className="hover:text-darkGrayishBlue items-center text-white" onClick={showbar}>Menus</a>
                   <Menus>    
                     {open ? (
-                      <ul className="relative flex flex-row pr-1 pl-1 space-x-4 pb-3">
+                      <ul className=" flex flex-row pr-1 pl-1 space-x-4 pb-3">
                         <a href="/about-us/aim" className="menu-item">
                             <a >Menu 1</a>
                         </a><br/>

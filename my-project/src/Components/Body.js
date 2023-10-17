@@ -33,8 +33,8 @@ function Body() {
               <img src={sig} className='w-full h-[400px]' alt=""  />
             </div> */}
 
-            <div className="relative flex  justify-start ">
-              <p className="absolute brightness-120 opacity-[0.] text-orange-300 font-bold top-8 font-young text-justify lg:w-[300px]  lg:top-[120px] lg:text-[28px] lg:pl-[25px] md:text-[14px]">
+            <div className="relative flex  justify-start top-[100px]">
+              <p className="absolute brightness-120 opacity-[0.] text-orange-300 font-bold font-young text-justify lg:w-[300px]  lg:top-[120px] lg:text-[28px] lg:pl-[25px] md:text-[14px]">
                 "I Believe You
                 <p className=' md:pl-[25px]' >I Can Believe You</p>
                 <p className=' md:pl-[25px] mt-[-15px]'>Because It's Me"</p>
