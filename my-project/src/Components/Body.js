@@ -33,7 +33,7 @@ function Body() {
               <img src={sig} className='w-full h-[400px]' alt=""  />
             </div> */}
 
-            <div className="relative flex  justify-start top-[100px]">
+            <div className="relative flex  md:justify-start top-[100px]">
               <p className="absolute brightness-120 opacity-[0.] text-orange-300 font-bold font-young text-justify lg:w-[300px]  lg:top-[120px] lg:text-[28px] lg:pl-[25px] md:text-[14px]">
                 "I Believe You
                 <p className=' md:pl-[25px]' >I Can Believe You</p>
@@ -193,18 +193,8 @@ function Body() {
 
               {/* Anime */}
               <div className="relative flex  justify-center mt-[200px]">
-              <p className="absolute brightness-120 hover:bg-white opacity-[1] text-orange-300 font-bold top-8 font-young text-justify lg:text-[28px]  md:text-[14px]">
-                "I'm no expert. But I think  
-                <p className=' md:pl-[25px] mt-[-5px]'>people mope when their </p>
-                <p className=' md:pl-[25px] mt-[-20px]'>expectations are too high. </p>
-                <p className=' md:pl-[25px] mt-[-20px]'>It's tiring when you always </p>
-                <p className=' md:pl-[25px] mt-[-20px]'>have to overachieve. Don't </p>
-                <p className=' md:pl-[25px] mt-[-20px]'>overdo it. Just work on </p>
-                <p className=' md:pl-[25px] mt-[-20px]'>achieving what you can." </p>
-                <p className=' text-right  mt-[-10px]'>- Haru Yoshida</p>
-              </p>
-             
-              <img src={Animepic} className='w-full h-[450px] opacity-[0.5]' alt="" />
+              
+              <img src={Animepic} className='w-full h-[600px] opacity-[0.]' alt="" />
              
             </div>
               <div className='text-black mt-[200px] relative bg-slate-600 '> 
@@ -266,18 +256,9 @@ function Body() {
               </div>
 
             {/* News   */}
-            <div className="relative flex justify-end mt-[200px]">
-              
-              <p className=" absolute brightness-150 hover:bg-white opacity-[0.] text-rose-300 font-bold top-8 font-young lg:right-[300px] lg:top-[100px] lg:text-[28px] lg:pl-[20px] md:text-[14px]">
-                "And of course
-                <p className=' md:pl-[25px] mt-[-5px]'>Something </p>
-                <p className=' md:pl-[25px] mt-[-20px]'>Must End </p>
-                <p className=' md:pl-[25px] mt-[-20px]'>For something </p>
-                <p className=' md:pl-[25px] mt-[-20px]'>To begin.</p>
-                <p className=' text-right  mt-[-10px]'>- Nish Ant</p>
-              </p>
-             
-            <img src={Newspic} className='w-full h-[450px] opacity-[0.5]' alt="" />
+            <div className="relative flex  mt-[200px]">
+             <a href="/"style={{ textDecoration: 'none' }}><button className="absolute btn btn-primary d-block md:w-40 md:top-[350px] md:left-[50px] lg:w-40 sm:w-32 lg:top-[350px] lg:left-[150px] sm:top-[350px] sm:left-4">News</button></a> 
+             <img src={Newspic} className='w-full h-[450px] opacity-[0.]' alt="" />
             </div>
             
             

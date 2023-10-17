@@ -1,5 +1,5 @@
 
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import * as FaIcons from "react-icons/fa";
@@ -65,20 +65,17 @@ const SidebarWrap = styled.div`
 `;
 const Menus = styled.div`
   position: absolute;
-  background: #2f3138;
-  list-style-type: none;
-  margin: 33px -18px;
- 
-  flex-direction: row;
-  text-align: center;
-  a{
-  margin:0;
-  color:white;
-  }
-  a:hover {
-  background: rgb(108, 155, 199);
 
+  list-style-type: none;
+  margin: 40px 1px 0px -250px;
+
+  width: auto;
+  top:20px;
+  a{
+
+  color:red;
   }
+ 
 `;
 
 const Navbar = () => {
@@ -86,37 +83,78 @@ const Navbar = () => {
   const [open, setbar] = useState(false);
   const showbar = () => setbar(!open);
   const showSidebar = () => setSidebar(!sidebar);
+  const menuRef = useRef();
+  const menuReff = useRef();
+
+
+  useEffect(() =>{
+    let handler  = (e) =>{
+      if(!menuRef.current.contains(e.target)){
+        setbar(false);
+        console.log(menuRef.current);
+      }
+    };
+    let handlers = (e) =>{
+      if(!menuReff.current.contains(e.target)){
+        setSidebar(false);
+        console.log(menuRef.current);
+      }
+    };
+
+    document.addEventListener(`mousedown`,handler);
+    document.addEventListener(`mousedown`,handlers);
+    return () =>{
+      document.removeEventListener(`mousedown`,handler);
+      document.removeEventListener(`mousedown`,handlers);
+    }
+  });
+
+
   return (
     <>
-      <IconContext.Provider value={{ color: "#fff" }}>
-        <Nav>
+      <IconContext.Provider value={{ color: "#fff" }} >
+        <Nav >
           <div className="relative pt-2  opacity-[0.] ">
             <a href="/"><img  src={fun} className=' w-[50px] rounded-full'/></a>
           </div>
           <div className="pt-2 pr-[80px] opacity-[0.]">
             <a href="/"><img  src={logo} className='h-[50px] '/></a>
           </div>
-          <div className="hidden space-x-6 md:flex font-bold text-[20px] ">
-            <a href="/" className="hover:text-darkGrayishBlue text-white pt-1 ">Home</a>
+          <div className="relative hidden space-x-6 md:flex font-bold text-[20px] top-[8px]" ref={menuRef}>
+            <a href="/" style={{ textDecoration: 'none' }} className="hover:text-darkGrayishBlue text-white pt-1 " >Home</a>
             <ul className="pt-1">
               <a href="#" className="hover:text-darkGrayishBlue items-center text-white" onClick={showbar}>Menus</a>
-                  <Menus>    
+                  <Menus >    
                     {open ? (
-                      <ul className=" flex flex-row pr-1 pl-1 space-x-4 pb-3">
-                        <a href="/about-us/aim" className="menu-item">
-                            <a >Menu 1</a>
-                        </a><br/>
-                        <a href="/about-us/vision" className="menu-item">
-                            <a>Menu 2</a>
-                        </a><br/>
+                      
+                      <ul className=" flex relative justify-center items-center space-x-6 border-1 px-12 py-3 ">
+                        <a href="/"  style={{ textDecoration: 'none' }} className="menu-item hover:text-blue-300">
+                            <a >Chinese</a>
+                        </a>
+                        <a href="/Korean"  style={{ textDecoration: 'none' }} className="menu-item hover:text-blue-300">
+                            <a >Korean</a>
+                        </a>
+                        <a href="/about-us/vision" style={{ textDecoration: 'none' }} className="menu-item hover:text-blue-300">
+                            <a>Thailand</a>
+                        </a>
+                        <a href="/Korean"  style={{ textDecoration: 'none' }} className="menu-item hover:text-blue-300">
+                            <a >HongKong</a>
+                        </a>
+                        <a href="/about-us/vision" style={{ textDecoration: 'none' }} className="menu-item hover:text-blue-300">
+                            <a>America</a>
+                        </a>
+                        <a href="/about-us/vision" style={{ textDecoration: 'none' }} className="menu-item hover:text-blue-300">
+                            <a>Other</a>
+                        </a>
                       </ul>
                     ) : null}
                   </Menus>
               </ul>
-            <div className=" relative flex flex-row right-6 top-1 pt-1">
+              
+              <div className=" relative flex flex-row right-6 top-1 pt-1">
                 {open?<RiIcons.RiArrowDownSFill />:<RiIcons.RiArrowUpSFill />}
             </div> 
-            <a href="/news" className="relative hover:text-darkGrayishBlue text-white right-6 pt-1">News</a>
+            <a href="/news" style={{ textDecoration: 'none' }}  className="relative hover:text-darkGrayishBlue text-white right-6 pt-1">News</a>
 
           </div>
           <div  className="hidden md:flex border border-purple-200 rounded mr-[50px]">
@@ -125,17 +163,17 @@ const Navbar = () => {
                       className="block w-full px-4 py-2 text-purple-700 bg-white border rounded-md focus:border-purple-400 focus:ring-purple-300 focus:outline-none focus:ring focus:ring-opacity-40"
                       placeholder="Search..."
                   />
-                  <a href="" className=" px-4 pt-2 text-white bg-purple-600 border-l rounded"> <button className=" ">
+                  <a href="" style={{ textDecoration: 'none' }} className=" px-4 pt-2 text-white bg-purple-600 border-l rounded"> <button className=" ">
                       <RiIcons.RiSearchLine/>
                   </button> </a>
           </div>
-            <a href="/signin" className=" relative bg-purple-600 rounded md:flex hidden pt-2 pb-2 px-4 py-2 rounded pb-1 text-white  round-full baseline hover:text-brightRed"><button >Sign In</button></a>
+            <a href="/signin" style={{ textDecoration: 'none' }} className=" relative bg-purple-600 rounded md:flex hidden pt-2 pb-2 px-4 py-2 rounded pb-1 text-white  round-full baseline hover:text-brightRed"><button >Sign In</button></a>
             <NavIcon to="#" className="md:hidden focus:outline-none pl-16 ">
               <FaIcons.FaBars onClick={showSidebar} />
             </NavIcon>
         </Nav>
 
-        <SidebarNav sidebar={sidebar}>
+        <SidebarNav sidebar={sidebar} ref={menuReff}>
           <SidebarWrap>
             <NavIcon to="#">
               <AiIcons.AiOutlineClose onClick={showSidebar} />

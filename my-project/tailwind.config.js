@@ -25,6 +25,7 @@ module.exports = {
         verylightsilver:'hsl(0, 2%, 88%)',
         backgroundback:'hsl(20, 2%, 30%)',
         borderback: 'hsl(0, 1%, 10%)',
+        navbars:'hsl(224, 41%, 7%)',
       },
       fontFamily:{
         young:['Young'],

@@ -3,7 +3,6 @@ import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import {  OurAim, OurVision } from "./pages/Menus";
 import {
   Services,
   ServicesOne,
@@ -17,6 +16,8 @@ import Body from "./Components/Body";
 import News from "./pages/News";
 import Signin from "./pages/Signin";
 import Signup from "./pages/Signup";
+import Korean from "./Components/Korean/Korean";
+
 
 function App() {
   return (
@@ -24,12 +25,15 @@ function App() {
       <Navbar />
       <Routes>
         <Route path='/' element={<Body/>} />
-        <Route path='/menus/aim' element={<OurAim/>} />
-        <Route path='/menus/vision' element={<OurVision/>} />
+        <Route path='/menus/Korean' element={<Korean/>} />
         <Route path='/contact' element={<Contact/>} />
         <Route path='/news' element={<News/>} />
         <Route path='/signin' element={<Signin/>} />
         <Route path='/signup' element={<Signup/>} />
+
+
+
+        <Route path='/Korean' element={<Korean/>} />
       </Routes>
       <Footer />
     </Router>

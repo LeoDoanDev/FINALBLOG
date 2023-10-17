@@ -17,15 +17,14 @@ export const Sidebar = [
   {
     
     title: "Menus",
-    path: "/about-us",
     icon: <IoIcons.IoIosPaper />,
     iconClosed: <RiIcons.RiArrowDownSFill />,
     iconOpened: <RiIcons.RiArrowUpSFill />,
 
     subNav: [
       {
-        title: "Our Aim",
-        path: "/about-us/aim",
+        title: "Korean",
+        path: "/menus/Korean",
         icon: <IoIcons.IoIosPaper />,
       },
       {
