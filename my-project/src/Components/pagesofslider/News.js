@@ -4,7 +4,7 @@ import {Card,Button} from 'react-bootstrap';
 
 
 
-const Movie = props => {
+const News = props => {
    let { imgSrc, title,link} = props.data;
 
  
@@ -22,4 +22,4 @@ const Movie = props => {
 }
 
 
-export default Movie
+export default News

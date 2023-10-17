@@ -17,7 +17,6 @@ const Anime = props => {
        <Card.Text className='text-[15px] bg-verylightsilver font-bold '>{title}</Card.Text>
        <Card.Link href={link}/>
       </Card>
-      <Button className='w-100' variant="success">Go somewhere</Button>
     </Card>
    )
 }
