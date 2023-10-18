@@ -129,22 +129,22 @@ const Navbar = () => {
                     {open ? (
                       
                       <ul className=" flex relative justify-center items-center space-x-6 border-1 px-12 py-3 ">
-                        <a href="/"  style={{ textDecoration: 'none' }} className="menu-item hover:text-blue-300">
+                        <a href="/Chinese"  style={{ textDecoration: 'none' }} className="menu-item hover:text-blue-300">
                             <a >Chinese</a>
                         </a>
                         <a href="/Korean"  style={{ textDecoration: 'none' }} className="menu-item hover:text-blue-300">
                             <a >Korean</a>
                         </a>
-                        <a href="/about-us/vision" style={{ textDecoration: 'none' }} className="menu-item hover:text-blue-300">
+                        <a href="/Thailand" style={{ textDecoration: 'none' }} className="menu-item hover:text-blue-300">
                             <a>Thailand</a>
                         </a>
-                        <a href="/Korean"  style={{ textDecoration: 'none' }} className="menu-item hover:text-blue-300">
-                            <a >HongKong</a>
+                        <a href="/Japan"  style={{ textDecoration: 'none' }} className="menu-item hover:text-blue-300">
+                            <a >Japan</a>
                         </a>
-                        <a href="/about-us/vision" style={{ textDecoration: 'none' }} className="menu-item hover:text-blue-300">
+                        <a href="/America" style={{ textDecoration: 'none' }} className="menu-item hover:text-blue-300">
                             <a>America</a>
                         </a>
-                        <a href="/about-us/vision" style={{ textDecoration: 'none' }} className="menu-item hover:text-blue-300">
+                        <a href="/Other" style={{ textDecoration: 'none' }} className="menu-item hover:text-blue-300">
                             <a>Other</a>
                         </a>
                       </ul>
@@ -168,7 +168,7 @@ const Navbar = () => {
                       <RiIcons.RiSearchLine/>
                   </button> </a>
           </div>
-            <a href="/signin" style={{ textDecoration: 'none' }} className=" relative bg-purple-600 rounded md:flex hidden pt-2 pb-2 px-4 py-2  text-white round-full baseline hover:bg-brightRed"><button className="  ">Sign In</button></a>
+            <a href="/signin" style={{ textDecoration: 'none' }} className=" relative bg-purple-600 rounded md:flex hidden sm:pt-1 sm:pb-1 md:pt-1 md:pb-1 lg:pt-2 lg:pb-2 px-4 py-2  text-white round-full baseline hover:bg-brightRed"><button className="  ">Sign In</button></a>
             <NavIcon to="#" className="md:hidden focus:outline-none pl-16 ">
               <FaIcons.FaBars onClick={showSidebar} />
             </NavIcon>

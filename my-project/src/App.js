@@ -16,7 +16,13 @@ import Body from "./Components/Body";
 import News from "./pages/News";
 import Signin from "./pages/Signin";
 import Signup from "./pages/Signup";
-import Korean from "./Components/Korean/Korean";
+import Korean from "./Components/Pageofasian/Korean";
+import America from "./Components/Pageofasian/America";
+import Chinese from "./Components/Pageofasian/Chinese";
+import Japan from "./Components/Pageofasian/Japan";
+import Thailand from "./Components/Pageofasian/Thailand";
+import Other from "./Components/Pageofasian/Other";
+
 
 
 function App() {
@@ -34,6 +40,12 @@ function App() {
 
 
         <Route path='/Korean' element={<Korean/>} />
+        <Route path='/America' element={<America/>} />
+        <Route path='/Chinese' element={<Chinese/>} />
+        <Route path='/Japan' element={<Japan/>} />
+        <Route path='/Thailand' element={<Thailand/>} />
+        <Route path='/Other' element={<Other/>} />
+
       </Routes>
       <Footer />
     </Router>

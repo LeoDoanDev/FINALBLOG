@@ -1,16 +1,19 @@
 import React,{useState} from 'react'
-import Ntrack from '../Components/Pageofasian/Ntrack'
+import Ttrack from './Ttrack'
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-export const News = () => {
-     const [items,setitem] = useState(8);
+
+
+
+export const Thailand = () => {
+     const [items,setitem] = useState(4);
      const loadmore = () =>{
         setitem (items + items);
      }
 
 
-     const slide = Ntrack.cardData.slice(0,items)
+     const slide = Ttrack.cardData.slice(0,items)
 
 
   return (
@@ -45,4 +48,4 @@ export const News = () => {
     </section>
   )
 }
-export default News;
+export default Thailand;
