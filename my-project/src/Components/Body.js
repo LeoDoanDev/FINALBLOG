@@ -5,14 +5,11 @@ import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
-
 import Asian from'../Components/pagesofslider/Asian';
 import Anime from'../Components/pagesofslider/Anime';
 import Movie from'../Components/pagesofslider/Movie';
 import News from'../Components/pagesofslider/News';
-
 import 'bootstrap/dist/css/bootstrap.min.css';
-
 import sig from '../Assets/Logo/A Dream of Splendor (2021).png';
 import Newspic from '../Assets/pagesofslide/New.jpg';
 import Asianpic from '../Assets/pagesofslide/Drama.png';
@@ -21,11 +18,7 @@ import Animepic from '../Assets/pagesofslide/Anime.png';
 import bg from '../Assets/background.jpg';
 
 
-
-
-
 function Body() {
-  
   return (
        <div style={{ backgroundImage: `url(${bg})` }}>
            <div className=" border-black">
@@ -36,12 +29,7 @@ function Body() {
             <div className="relative flex  md:justify-start top-[100px]">
             <a href="/"style={{ textDecoration: 'none' }}><button className="absolute btn btn-primary d-block md:w-40 md:top-[400px] md:left-[50px] lg:w-40 sm:w-32 lg:top-[400px] lg:left-[150px] sm:top-[400px] sm:left-4">Asian Drama</button></a> 
 
-              <p className="absolute brightness-120 opacity-[0.] text-orange-300 font-bold font-young text-justify lg:w-[300px]  lg:top-[120px] lg:text-[28px] lg:pl-[25px] md:text-[14px]">
-                "I Believe You
-                <p className=' md:pl-[25px]' >I Can Believe You</p>
-                <p className=' md:pl-[25px] mt-[-15px]'>Because It's Me"</p>
-                <p className=' text-right  mt-[-10px]'>- Nam Hong Joo</p>
-              </p>
+
              
               <img src={Asianpic} className='w-full h-[500px] opacity-[0.]' alt="" />
              
